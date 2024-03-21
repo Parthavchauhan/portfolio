@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(7, 7, 34);
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(25, 25, 58);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    position: relative; /* Positioning for pseudo-elements */
+    transition: color 0.3s ease; /* Transition for text color */
+}
+nav ul li a::before{
+    content: ''; /* Required for pseudo-elements */
+    position: absolute; /* Positioning */
+    bottom: 0; /* Align to bottom */
+    left: 0; /* Align to left */
+    width: 0; /* Initially no width */
+    height: 2px; /* Height of the border */
+    background-color: white; /* Border color */
+    transition: width 0.3s ease; /* Transition for border width */
+}
+nav ul li a:hover::before{
+    width: 100%; /* Increase width to 100% on hover */
+    
+}
+.navspan{
+    margin-left: 4px;
+}
+
+nav ul li a:hover {
+    color: lavender;
+    font-size: 1.02rem;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    margin: 45px 0;
+    align-items: center;
+}
+
+.firstsection>div {
+    width: 30%;
+}
+
+.leftsection {
+    /* background-color: red; */
+    font-size: 2.4rem;
+
+
+
+}
+
+.rightsection {
+    margin-bottom: 20px;
+
+}
+
+.rightsection img {
+
+    width: 84%;
+    margin: 50px 0;
+
+}
+
+.purple {
+    color: rgb(145, 65, 219);
+}
+
+.text-grey {
+    color: grey;
+}
+
+#element {
+    color: rgb(145, 65, 219);
+}
+
+.secondsection {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+main hr {
+    /* border: 0px; */
+    /* height: 1.2px; */
+    margin: 60px 84px;
+}
+.Section4head{
+    margin-left: 10rem;
+    margin-bottom: 5rem;
+}
+
+.allcard{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 190vh;
+    margin-left: 40px;
+}
+.allcard h1{
+    color: white;
+    text-align: center;
+}
+.allcard p{
+    color: white;
+    margin-top: 10px;
+    width: 20rem;
+    text-align: center;
+}
+.card1 a,.card2 a,.card3 a{
+    color: white;
+    font-size: 60px;
+    margin-left: 120px;
+    margin-bottom: 20px;
+}
+.card1,.card2,.card3{
+    border: 0px solid white;
+    padding: 40px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px rgba(239, 232, 232, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+    transition: border 0.3s ease-in-out;
+}
+.card1:hover{
+    box-shadow: 0px 0px 20px rgba(237, 233, 233, 0.3);
+    border: 1px solid white;
+}
+.card2:hover{
+    box-shadow: 0px 0px 20px rgba(237, 233, 233, 0.3);
+    border: 1px solid white;
+}
+.card3:hover{
+    box-shadow: 0px 0px 20px rgba(237, 233, 233, 0.3);
+    border: 1px solid white;
+}
+.cardbut1,.cardbut2,.cardbut3{
+    text-align: center;
+    margin-top: 30px;
+}
+.cardbut1 button,.cardbut2 button,.cardbut3 button{
+    padding: 10px 10px;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    border-radius: 10px;
+    font-size: medium;
+    box-shadow: 0px 1px 5px rgba(237, 233, 233, 0.3);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.cardbut1 button:hover{
+    box-shadow: 0px 2px 7px rgba(237, 233, 233, 0.3);
+    cursor: pointer;
+}
+.cardbut2 button:hover{
+    box-shadow: 0px 2px 7px rgba(237, 233, 233, 0.3);
+    cursor: pointer;
+}
+.cardbut3 button:hover{
+    box-shadow: 0px 2px 7px rgba(237, 233, 233, 0.3);
+    cursor: pointer;
+}

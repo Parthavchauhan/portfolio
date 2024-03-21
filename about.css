@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(7, 7, 34);
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(25, 25, 58);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    position: relative; /* Positioning for pseudo-elements */
+    transition: color 0.3s ease; /* Transition for text color */
+}
+.navspan{
+    margin-left: 4px;
+}
+nav ul li a::before{
+    content: ''; /* Required for pseudo-elements */
+    position: absolute; /* Positioning */
+    bottom: 0; /* Align to bottom */
+    left: 0; /* Align to left */
+    width: 0; /* Initially no width */
+    height: 2px; /* Height of the border */
+    background-color: white; /* Border color */
+    transition: width 0.3s ease; /* Transition for border width */
+}
+nav ul li a:hover::before{
+    width: 100%; /* Increase width to 100% on hover */
+    
+}
+
+nav ul li a:hover {
+    color: lavender;
+    font-size: 1.02rem;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    margin: 45px 0;
+    align-items: center;
+}
+
+.firstsection>div {
+    width: 30%;
+}
+
+.leftsection {
+    /* background-color: red; */
+    font-size: 2.4rem;
+
+
+
+}
+
+.rightsection {
+    margin-bottom: 20px;
+
+}
+
+.rightsection img {
+
+    width: 84%;
+    margin: 50px 0;
+
+}
+
+.purple {
+    color: rgb(145, 65, 219);
+}
+
+.text-grey {
+    color: grey;
+}
+
+#element {
+    color: rgb(145, 65, 219);
+}
+
+.secondsection {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+main hr {
+    /* border: 0px; */
+    /* height: 1.2px; */
+    margin: 60px 84px;
+}
+.uppercontainer{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 7rem;
+}
+.rightcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15rem;
+}
+.leftcontainer img{
+    width: 20rem;
+    height: 20rem;
+}
+.box2 h1{
+    margin-bottom: 1.5rem;
+    font-size: 35px;
+    color: rgb(145, 65, 219)
+}
+.box2 p{
+    font-size: 20px;
+}
+hr{
+    margin-top: 60px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.lowercontainer{
+    display: flex;
+    margin-top: 4rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.lowerright{
+    margin-left: 10rem
+}
+.lowerleft h1,.lowerright h1{
+    margin-bottom: 2rem;
+    color: rgb(145, 65, 219)
+}
+.lowerleft p{
+    font-size: 20px;
+}
+.lowerright p{
+    font-size: 20px;
+}
+.contact1 a,.contact2 a,.contact3 a{
+    color: white;
+}
+.contact1 span,.contact2 span,.contact3 span{
+    margin-left: 10px;
+}
+.contacts{
+    margin-top: 2rem;
+}
+.contact1{
+    margin-bottom: 1rem;
+}
+.contact2{
+    margin-bottom: 1rem;
+}
